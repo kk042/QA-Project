@@ -14,7 +14,7 @@ export default function App() {
   
   // State Initialization with local storage capabilities
   const [cart, setCart] = useState<CartItem[]>(() => {
-    const saved = localStorage.getItem('ab_automation_cart');
+    const saved = localStorage.getItem('qacart_cart');
     return saved ? JSON.parse(saved) : [];
   });
   
@@ -29,7 +29,7 @@ export default function App() {
   const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false);
 
   // Pre-signed in model credentials for natural industrial experience
-  const [userEmail, setUserEmail] = useState<string | null>('engineering@abautomation.com');
+  const [userEmail, setUserEmail] = useState<string | null>('engineering@qacart.com');
 
   // Order Success Modal Staging states
   const [activeOrderConfirmation, setActiveOrderConfirmation] = useState<{
@@ -39,7 +39,7 @@ export default function App() {
 
   // Sync cart state into dynamic storage
   useEffect(() => {
-    localStorage.setItem('ab_automation_cart', JSON.stringify(cart));
+    localStorage.setItem('qacart_cart', JSON.stringify(cart));
   }, [cart]);
 
   // Handle adding product to shopping cart
@@ -84,7 +84,7 @@ export default function App() {
 
   // Authentic Order dispatch complete mock simulator
   const handlePlaceOrder = (shippingInfo: ShippingInfo) => {
-    const generatedId = `AB-${Math.floor(100000 + Math.random() * 900000)}`;
+    const generatedId = `QA-${Math.floor(100000 + Math.random() * 900000)}`;
     setActiveOrderConfirmation({
       orderId: generatedId,
       shipping: shippingInfo

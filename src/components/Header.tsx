@@ -39,7 +39,7 @@ export default function Header({
             hub
           </span>
           <span className="font-display text-2xl font-bold text-primary-teal tracking-tight">
-            ABAutomationHub
+            QACart
           </span>
         </div>
 

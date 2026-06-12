@@ -8,7 +8,7 @@ interface AuthPageProps {
 
 export default function AuthPage({ userEmail, onLogin, onLogout }: AuthPageProps) {
   
-  const [emailInput, setEmailInput] = useState('engineering@abautomation.com');
+  const [emailInput, setEmailInput] = useState('engineering@qacart.com');
   const [passwordInput, setPasswordInput] = useState('********');
   const [isRegisterMode, setIsRegisterMode] = useState(false);
 
@@ -93,7 +93,7 @@ export default function AuthPage({ userEmail, onLogin, onLogout }: AuthPageProps
               </div>
               <div className="flex justify-between">
                 <span>Enterprise Registry</span>
-                <span className="font-mono">AB-99214-X</span>
+                <span className="font-mono">QA-99214-X</span>
               </div>
             </div>
 
@@ -220,7 +220,7 @@ export default function AuthPage({ userEmail, onLogin, onLogout }: AuthPageProps
             <div className="space-y-4 text-left select-none relative z-10">
               <div className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-3xl text-accent-teal">hub</span>
-                <span className="font-display font-bold text-xl tracking-tight">ABAutomationHub</span>
+                <span className="font-display font-bold text-xl tracking-tight">QACart</span>
               </div>
               <h2 className="font-display text-4xl font-extrabold leading-tight tracking-tight pt-4">
                 Verify Industrial Identity
@@ -244,7 +244,7 @@ export default function AuthPage({ userEmail, onLogin, onLogout }: AuthPageProps
           {/* Verification Forms Card block */}
           <div className="bg-white p-8 md:p-10 rounded-[28px] border border-outline-variant/30 shadow-sm text-left flex flex-col justify-center">
             <h2 className="font-display text-2xl font-bold text-primary-dark mb-2">
-              {isRegisterMode ? 'Register Hub profile' : 'Sign in to Hub'}
+              {isRegisterMode ? 'Register QACart profile' : 'Sign in to QACart'}
             </h2>
             <p className="font-sans text-xs text-on-surface-variant mb-6">
               State your valid corporate email credentials.
@@ -285,7 +285,7 @@ export default function AuthPage({ userEmail, onLogin, onLogout }: AuthPageProps
                   type="submit"
                   className="w-full bg-[#020F12] text-white py-3 rounded-xl font-sans text-sm font-bold tracking-wide shadow-md active:scale-95 transition-all outline-none hover:bg-primary-teal"
                 >
-                  {isRegisterMode ? 'Construct Hub account' : 'Authorize Credentials'}
+                  {isRegisterMode ? 'Construct QACart account' : 'Authorize Credentials'}
                 </button>
               </div>
 

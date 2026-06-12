@@ -16,14 +16,14 @@ export default function Footer({ setScreen }: FooterProps) {
               hub
             </span>
             <span className="font-display font-bold text-2xl tracking-tight">
-              ABAutomationHub
+              QACart
             </span>
           </div>
           <p className="font-sans text-xs leading-relaxed max-w-sm text-slate-400">
             High-precision industrial automation, quality control tools, and calibrated diagnostics systems for next-generation automated production plants.
           </p>
           <p className="font-mono text-[10px] text-slate-500">
-            © 2026 ABAutomationHub. All rights corporate reserved.
+            © 2026 QACart. All rights corporate reserved.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export default function Footer({ setScreen }: FooterProps) {
               </button>
             </li>
             <li>
-              <button onClick={() => alert('Integration assistance channels are open 24/7 at support@abautomation.com')} className="hover:text-accent-teal transition-colors outline-none text-left">
+              <button onClick={() => alert('Integration assistance channels are open 24/7 at support@qacart.com')} className="hover:text-accent-teal transition-colors outline-none text-left">
                 Systems Engineer Support
               </button>
             </li>
