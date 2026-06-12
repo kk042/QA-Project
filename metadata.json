@@ -1,0 +1,6 @@
+{
+  "name": "ABAutomationHub",
+  "description": "High-precision industrial automation, quality control tools and calibration toolkit e-commerce platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
